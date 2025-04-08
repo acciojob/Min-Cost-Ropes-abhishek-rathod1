@@ -6,8 +6,8 @@ function mincost(arr)
 	arr.sort((a,b) => a-b);
 
 	while (arr.length >1) {
-		let first = arr.shift;
-		let second = arr.shift;
+		let first = arr.shift();
+		let second = arr.shift();
 
 		let cost = first + second;
 		totalCost += cost;
